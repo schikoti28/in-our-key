@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Our Key | Empowering Young Musicians</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --light-blue: #63afde;
+            --cream: #fff0c8;
+            --black: #000000;
+            --med-blue: #116ea8;
+            --dark-blue: #07517e;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        body { background-color: var(--white); color: var(--black); line-height: 1.6; }
+
+        /* Navigation */
+        nav {
+            background: var(--dark-blue);
+            padding: 1rem 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo { color: var(--cream); font-size: 1.5rem; font-weight: bold; }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { color: white; text-decoration: none; font-size: 0.9rem; transition: 0.3s; }
+        nav ul li a:hover { color: var(--light-blue); }
+
+        /* Hero Section */
+        header {
+            height: 80vh;
+            background: linear-gradient(rgba(7, 81, 126, 0.8), rgba(17, 110, 168, 0.8)), url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--cream);
+            text-align: center;
+            padding: 0 20px;
+            margin-top: 60px;
+        }
+
+        header h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+        header p { font-size: 1.2rem; max-width: 700px; }
+
+        /* Generic Section Styling */
+        section { padding: 80px 10%; }
+        h2 { color: var(--dark-blue); text-align: center; margin-bottom: 40px; font-size: 2.5rem; }
+
+        /* Mission Section */
+        #mission { background-color: var(--cream); text-align: center; }
+
+        /* Team Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 10px; 
+            text-align: center; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--light-blue);
+        }
+        .card img { width: 100px; height: 100px; border-radius: 50%; margin-bottom: 15px; background: #eee; }
+
+        /* Sign-up Buttons */
+        .cta-container { display: flex; justify-content: center; gap: 20px; margin-top: 30px; }
+        .btn {
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-primary { background: var(--light-blue); color: white; }
+        .btn-primary:hover { background: var(--med-blue); }
+        .btn-secondary { background: var(--dark-blue); color: var(--cream); }
+
+        /* Accomplishments */
+        .activity-list { list-style: none; }
+        .activity-item { 
+            background: #f4f4f4; 
+            margin-bottom: 10px; 
+            padding: 20px; 
+            border-left: 10px solid var(--med-blue); 
+        }
+
+        footer { background: var(--black); color: white; text-align: center; padding: 20px; }
+
+        @media (max-width: 768px) {
+            nav ul { display: none; }
+            header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">IN OUR KEY</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#team">Meet the Team</a></li>
+            <li><a href="#accomplishments">Accomplishments</a></li>
+            <li><a href="#students">Students</a></li>
+            <li><a href="#teachers">Teachers</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>In Our Key</h1>
+        <p>Connecting talented high school mentors with the next generation of musicians.</p>
+        <div class="cta-container">
+            <a href="#teachers" class="btn btn-primary">Become a Teacher</a>
+            <a href="#students" class="btn btn-secondary">Find a Mentor</a>
+        </div>
+    </header>
+
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p style="max-width: 800px; margin: 0 auto; font-size: 1.2rem;">
+            "In Our Key" is a student-led organization dedicated to making music education accessible. 
+            We bridge the gap between enthusiastic high school musicians and elementary/middle school students, 
+            fostering a community of creativity, mentorship, and harmony.
+        </p>
+    </section>
+
+    <section id="team">
+        <h2>Meet the Team</h2>
+        <h3 style="color: var(--med-blue); margin-bottom: 20px;">Executive Board</h3>
+        <div class="grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/100" alt="Team Member">
+                <h4>Name</h4>
+                <p>President / Founder</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/100" alt="Team Member">
+                <h4>Name</h4>
+                <p>Vice President</p>
+            </div>
+        </div>
+        <h3 style="color: var(--med-blue); margin: 40px 0 20px 0;">Our Teachers</h3>
+        <div class="grid">
+            <div class="card"><h4>Teacher Name</h4><p>Violin / Piano</p></div>
+            <div class="card"><h4>Teacher Name</h4><p>Flute / Theory</p></div>
+            <div class="card"><h4>Teacher Name</h4><p>Cello / Bass</p></div>
+        </div>
+    </section>
+
+    <section id="accomplishments" style="background-color: var(--cream);">
+        <h2>Accomplishments</h2>
+        <div class="activity-list">
+            <div class="activity-item">
+                <strong>Spring Recital 2024:</strong> Over 20 students performed their first solo pieces.
+            </div>
+            <div class="activity-item">
+                <strong>Community Outreach:</strong> Partnered with 3 local elementary schools to provide free lessons.
+            </div>
+        </div>
+    </section>
+
+    <section id="students">
+        <h2>For Students</h2>
+        <p style="text-align:center;">Are you an elementary or middle school student looking to learn an instrument?</p>
+        <div class="cta-container">
+            <a href="YOUR_GOOGLE_FORM_LINK_HERE" class="btn btn-secondary">Sign Up for Lessons</a>
+        </div>
+    </section>
+
+    <section id="teachers" style="background-color: #f9f9f9;">
+        <h2>Teacher Sign-Up</h2>
+        <p style="text-align:center;">Are you a high schooler who wants to give back through music?</p>
+        <div class="cta-container">
+            <a href="YOUR_GOOGLE_FORM_LINK_HERE" class="btn btn-primary">Apply to Teach</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 In Our Key Organization. Built by students, for students.</p>
+    </footer>
+
+</body>
+</html>
