@@ -232,3 +232,117 @@
             border-radius: 40px;
             padding: 80px 40px;
             color: white;
+            text-align: center;
+            margin: 0 8% 100px 8%;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background: #fff;
+            padding: 60px 8%;
+            text-align: center;
+            border-top: 1px solid #eee;
+            font-family: var(--header-font);
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--med-blue);
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 3rem; }
+            .impact-container { grid-template-columns: 1fr; }
+            nav ul { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">In Our Key</div>
+        <ul>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#impact">Impact</a></li>
+            <li><a href="#join" style="color: var(--light-blue)">Join Us</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="hero-content">
+            <span class="hero-tag">A Student-Led Initiative</span>
+            <h1>Harmony Starts With Mentorship.</h1>
+            <p>Connecting the musical talent of high schoolers with the curiosity of elementary and middle school students.</p>
+            <div class="cta">
+                <a href="#join" class="btn btn-primary">Get Started</a>
+                <a href="#mission" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="mission">
+        <h2 class="section-title">Our Mission</h2>
+        <div class="mission-card">
+            <p style="font-size: 1.5rem; color: var(--dark-blue);">
+                We believe that every young musician deserves a mentor. "In Our Key" bridges the gap between generations of students to provide free, high-quality music education that fosters confidence and community.
+            </p>
+        </div>
+    </section>
+
+    <section id="team">
+        <h2 class="section-title">The Leadership</h2>
+        <div class="team-grid">
+            <div class="member-card">
+                <div class="member-img"></div>
+                <span class="role">Executive Director</span>
+                <h4>Name Here</h4>
+                <p>League Spartan and Libre Baskerville make this bio look professional.</p>
+            </div>
+            <div class="member-card">
+                <div class="member-img"></div>
+                <span class="role">Director of Operations</span>
+                <h4>Name Here</h4>
+                <p>Passionate about organizing student recitals and workshops.</p>
+            </div>
+            <div class="member-card">
+                <div class="member-img"></div>
+                <span class="role">Lead Instructor</span>
+                <h4>Name Here</h4>
+                <p>Coordinating over 30 student-teacher pairs across the district.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact">
+        <h2 class="section-title">Our Impact</h2>
+        <div class="impact-container">
+            <div class="impact-box">
+                <h3 style="font-family: var(--header-font); font-size: 3rem;">50+</h3>
+                <p>Active Student-Teacher Pairings</p>
+            </div>
+            <div class="impact-box light">
+                <h3 style="font-family: var(--header-font); font-size: 3rem;">12</h3>
+                <p>Local Schools Partnered</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="join-section" id="join">
+        <h2 style="font-family: var(--header-font); font-size: 3.5rem; margin-bottom: 20px;">Ready to Play?</h2>
+        <p style="margin-bottom: 40px; font-size: 1.2rem;">Whether you want to teach or learn, there's a place for you in our key.</p>
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <a href="YOUR_STUDENT_FORM" class="btn" style="background: var(--white); color: var(--light-blue);">I am a Student</a>
+            <a href="YOUR_TEACHER_FORM" class="btn" style="background: var(--dark-blue); color: white;">I am a Teacher</a>
+        </div>
+    </div>
+
+    <footer>
+        <div style="margin-bottom: 20px;">
+            <i class="fab fa-instagram" style="margin: 0 10px; font-size: 1.5rem;"></i>
+            <i class="fab fa-linkedin" style="margin: 0 10px; font-size: 1.5rem;"></i>
+            <i class="fas fa-envelope" style="margin: 0 10px; font-size: 1.5rem;"></i>
+        </div>
+        <p>&copy; 2024 IN OUR KEY. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+</body>
+</html>
